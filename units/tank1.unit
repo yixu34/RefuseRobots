@@ -1,0 +1,106 @@
+[STATS]
+name "Scout tank"
+speed 7.0
+mapview_icon units/mapview/mapview_tank1.png
+commands attack move stop retreat
+hitpoints 16
+damage 4
+cooldown 2
+range 7
+cost 10
+production_icon buttons/button_scout_tank.png
+wireframe buttons/button_scout_tank.png
+hotkey s
+hud_x 0
+hud_y 1
+vision 15
+mileage 30
+fuel_cap 15
+turn_speed 400
+projectile_type tank
+barrel_length 0.6
+
+[FRAMES]
+#image                                       angle  anim   center   rot  scale
+"units/scouttank/tank body-E.png"            0      base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-NE-E.png"         22.5   base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-NE.png"           45     base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-NE-N.png"         67.5   base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-N.png"            90     base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-NW-N.png"         112.5  base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-NW.png"           135    base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-NW-W.png"         157.5  base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-W.png"            180    base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-SW-W.png"         202.5  base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-SW.png"           225    base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-SW-S.png"         247.5  base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-S.png"            270    base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-SE-S.png"         292.5  base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-SE.png"           315    base   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-SE-E.png"         337.5  base   0.5 0.5  0    1.0 1.0
+
+"units/scouttank/tank body-E-8.png"            0      move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-NE-E-8.png"         22.5   move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-NE-8.png"           45     move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-NE-N-8.png"         67.5   move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-N-8.png"            90     move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-NW-N-8.png"         112.5  move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-NW-8.png"           135    move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-NW-W-8.png"         157.5  move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-W-8.png"            180    move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-SW-W-8.png"         202.5  move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-SW-8.png"           225    move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-SW-S-8.png"         247.5  move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-S-8.png"            270    move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-SE-S-8.png"         292.5  move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-SE-8.png"           315    move   0.5 0.5  0    1.0 1.0
+"units/scouttank/tank body-SE-E-8.png"         337.5  move   0.5 0.5  0    1.0 1.0
+
+"units/scouttank/tank turret-E.png"          0      turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-NE-E.png"       22.5   turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-NE.png"         45     turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-NE-N.png"       67.5   turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-N.png"          90     turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-NW-N.png"       112.5  turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-NW.png"         135    turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-NW-W.png"       157.5  turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-W.png"          180    turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-SW-W.png"       202.5  turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-SW.png"         225    turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-SW-S.png"       247.5  turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-S.png"          270    turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-SE-S.png"       292.5  turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-SE.png"         315    turret 0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-SE-E.png"       337.5  turret 0.5 0.5  0    1.0 1.0
+
+"units/scouttank/tank turret-E-9.png"        0      shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-NE-E-9.png"     22.5   shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-NE-9.png"       45     shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-NE-N-9.png"     67.5   shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-N-9.png"        90     shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-NW-N-9.png"     112.5  shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-NW-9.png"       135    shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-NW-W-9.png"     157.5  shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-W-9.png"        180    shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-SW-W-9.png"     202.5  shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-SW-9.png"       225    shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-SW-S-9.png"     247.5  shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-S-9.png"        270    shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-SE-S-9.png"     292.5  shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-SE-9.png"       315    shoot  0.5 0.5  0    1.0 1.0
+"units/scouttank/tank turret-SE-E-9.png"     337.5  shoot  0.5 0.5  0    1.0 1.0
+
+[ANIMATION]
+idle  base 1
+turret turret 1
+turret_shoot shoot 10
+move  move 1
+
+[SOUNDS]
+die sounds/explosion3.wav 100
+fire sounds/explosion2.wav 50
+select sounds/tank1/ack_1.wav 100 sounds/tank1/ack_2.wav 100 sounds/tank1/ack_3.wav 100
+move sounds/tank1/move_1.wav 100 sounds/tank1/move_2.wav 100
+retreat sounds/tank1/retreat_1.wav 100 sounds/tank1/retreat_2.wav 100
+attack sounds/tank1/attack_1.wav 100 sounds/tank1/attack_2.wav 100
+

@@ -1,0 +1,17 @@
+Debug
+Release
+*.ncb
+*.obj
+*.pdb
+*.ilk
+BuildLog.htm
+*.exe
+*.idb
+*.suo
+*.rsp
+*.pch
+stdout.txt
+stderr.txt
+*.log
+settings.txt
+Thumbs.db

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cp landfill/landfill.exe RefuseRobots/RefuseRobots.exe
+cp landfill/*.dll RefuseRobots
+cp landfill/tileset_default.txt RefuseRobots
+cp -R landfill/images RefuseRobots
+cp -R landfill/sounds RefuseRobots
+cp -R landfill/maps RefuseRobots
+cp -R landfill/units RefuseRobots
+cp -R landfill/fonts RefuseRobots
+

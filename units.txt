@@ -1,0 +1,25 @@
+Units:
+
+Infantry (4 types)
+  Balanced - Armor-piercing rifles (works against all 3; best range)
+  Anti-air - Guided rocket launchers (great vs. air, OK vs. tanks, poor vs. infantry)
+  Anti-tank - Mortar
+  Anti-infantry - Machine guns (great vs. infantry, poor vs. tanks and air)
+Tank (4 types)
+  Balanced
+  High speed
+  Heavy armor
+  Heavy weapon
+Aircraft (helicopters) (4 types)
+Artillery
+Oil tanker
+Troop transport
+Nanite
+
++--------+--------+--------+--------+
+|  Tank  |Infantry|Artiller|        |
++--------+--------+--------+--------+
+| Nanite |Oil tank|Transpor|Helicopt|
++--------+--------+--------+--------+
+|        |        |        |Rally Pt|
++--------+--------+--------+--------+

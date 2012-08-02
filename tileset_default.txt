@@ -1,0 +1,219 @@
+[TILES]
+con      tileset/tile_concrete.png 1
+wat      tileset/tile_water.png 0
+gra      tileset/tile_grass.png 1
+dir      tileset/tile_dirt.png 1
+hdir     tileset/tile_harshdirt.png 1
+men      tileset/Road_M_EW-N.png 1
+mes      tileset/Road_M_EW-S.png 1
+men      tileset/Road_M_EW-N.png 1
+mes      tileset/Road_M_EW-S.png 1
+ren      tileset/Road_LL_EW-N.png 1
+res      tileset/Road_LL_EW-S.png 1
+inw      tileset/Road_int_NW.png 1
+ine      tileset/Road_int_NE.png 1
+isw      tileset/Road_int_SW.png 1
+ise      tileset/Road_int_SE.png 1
+int      tileset/Road_int_M.png 1
+snw      tileset/Road_S_NS-W.png 1
+sne      tileset/Road_S_NS-E.png 1
+dirGraE  tileset/dirt_grass_e.png 1
+dirGraN  tileset/dirt_grass_n.png 1
+dirGraS  tileset/dirt_grass_s.png 1
+dirGraW  tileset/dirt_grass_w.png 1
+graDirNE tileset/dirt_grass_ne.png 1
+graDirNW tileset/dirt_grass_nw.png 1
+graDirSE tileset/dirt_grass_se.png 1
+graDirSW tileset/dirt_grass_sw.png 1
+dirGraSE tileset/dirt_grass_nw-fix.png 1
+dirGraSW tileset/dirt_grass_ne-fix.png 1
+dirGraNE tileset/dirt_grass_sw-fix.png 1
+dirGraNW tileset/dirt_grass_se-fix.png 1
+dirWatNE tileset/dirt_water_ne.png 0
+dirWatSE tileset/dirt_water_se.png 0
+dirWatSW tileset/dirt_water_sw.png 0
+dirWatNW tileset/dirt_water_nw.png 0
+dirWatE  tileset/dirt_water_e.png 1
+dirWatW  tileset/dirt_water_w.png 1
+dirWatN  tileset/dirt_water_n.png 1
+dirWatS  tileset/dirt_water_s.png 1
+watDirSE tileset/dirt_water_nw-fix.png 1
+watDirSW tileset/dirt_water_ne-fix.png 1
+watDirNE tileset/dirt_water_sw-fix.png 1
+watDirNW tileset/dirt_water_se-fix.png 1
+harDirS  tileset/harsh_dirt_s.png 1
+harDirN  tileset/harsh_dirt_n.png 1
+harDirE  tileset/harsh_dirt_e.png 1
+harDirW  tileset/harsh_dirt_w.png 1
+harDirSE tileset/harsh_dirt_se.png 1
+harDirNW tileset/harsh_dirt_nw.png 1
+harDirSW tileset/harsh_dirt_sw.png 1
+harDirNE tileset/harsh_dirt_ne.png 1
+dirHarSE tileset/harsh_dirt_NW-fix.png 1
+dirHarSW tileset/harsh_dirt_NE-fix.png 1
+dirHarNE tileset/harsh_dirt_SW-fix.png 1
+dirHarNW tileset/harsh_dirt_SE-fix.png 1
+lfSW     tileset/landfill-dirt-sw.png 1
+lfNW     tileset/landfill-dirt-nw.png 1
+lfNE     tileset/landfill-dirt-ne.png 1
+lfSE     tileset/landfill-dirt-se.png 1
+owSW     tileset/oil-dirt-sw.png 0
+owNW     tileset/oil-dirt-nw.png 0
+owNE     tileset/oil-dirt-ne.png 0
+owSE     tileset/oil-dirt-se.png 0
+for      tileset/tile_forest.png 0
+forGraE  tileset/forest_E.png 0
+forGraNE tileset/forest_NE.png 0
+forGraN  tileset/forest_N.png 0
+forGraNW tileset/forest_NW.png 0
+forGraW  tileset/forest_W.png 0
+forGraSW tileset/forest_SW.png 0
+forGraS  tileset/forest_S.png 0
+forGraSE tileset/forest_SE.png 0
+graForSE tileset/forest_NW-fix.png 0
+graForSW tileset/forest_NE-fix.png 0
+graForNE tileset/forest_SW-fix.png 0
+graForNW tileset/forest_SE-fix.png 0
+doodad1  tileset/tile_doodad1.png 0
+doodad2  tileset/tile_doodad2.png 0
+doodad3  tileset/tile_doodad3.png 0
+doodad4  tileset/tile_doodad4.png 0
+doodad5  tileset/tile_doodad5.png 0
+doodad6  tileset/tile_doodad6.png 0
+doodad7  tileset/tile_doodad7.png 0
+doodad8  tileset/tile_doodad8.png 0
+doodad9  tileset/tile_doodad9.png 0
+doodad10  tileset/tile_doodad10.png 0
+doodad11  tileset/tile_doodad11.png 0
+doodad12  tileset/tile_doodad12.png 0
+doodad13  tileset/tile_doodad13.png 0
+conGraE  tileset/concrete_grass_E.png      1
+conGraNE tileset/concrete_grass_NE.png     1
+conGraN  tileset/concrete_grass_N.png      1
+conGraNW tileset/concrete_grass_NW.png     1
+conGraW  tileset/concrete_grass_W.png      1
+conGraSW tileset/concrete_grass_SW.png     1
+conGraS  tileset/concrete_grass_S.png      1
+conGraSE tileset/concrete_grass_SE.png     1
+graConSE tileset/concrete_grass_NW-fix.png 1
+graConSW tileset/concrete_grass_NE-fix.png 1
+graConNE tileset/concrete_grass_SW-fix.png 1
+graConNW tileset/concrete_grass_SE-fix.png 1
+conDirE  tileset/concrete_dirt_E.png      1
+conDirNE tileset/concrete_dirt_NE.png     1
+conDirN  tileset/concrete_dirt_N.png      1
+conDirNW tileset/concrete_dirt_NW.png     1
+conDirW  tileset/concrete_dirt_W.png      1
+conDirSW tileset/concrete_dirt_SW.png     1
+conDirS  tileset/concrete_dirt_S.png      1
+conDirSE tileset/concrete_dirt_SE.png     1
+dirConSE tileset/concrete_dirt_NW-fix.png 1
+dirConSW tileset/concrete_dirt_NE-fix.png 1
+dirConNE tileset/concrete_dirt_SW-fix.png 1
+dirConNW tileset/concrete_dirt_SE-fix.png 1
+
+
+[ABSOLUTE]
+con       tileset/tile_concrete.png       1 con con con con
+wat       tileset/tile_water.png          0 wat wat wat wat
+gra       tileset/tile_grass.png          1 gra gra gra gra
+dir       tileset/tile_dirt.png           1 dir dir dir dir
+for       tileset/tile_forest.png         0 for for for for
+hdir      tileset/tile_harshdirt.png      1 hdr hdr hdr hdr
+lfNW      tileset/landfill-dirt-nw.png    1 dir dir dir lfl
+owNW      tileset/oil-dirt-nw.png         0 dir dir dir owl
+doodad1   tileset/tile_doodad1.png        0 gra gra gra gra
+doodad2   tileset/tile_doodad2.png        0 gra gra gra gra
+doodad3   tileset/tile_doodad3.png        0 gra gra gra gra
+doodad4   tileset/tile_doodad4.png        0 gra gra gra gra
+doodad5   tileset/tile_doodad5.png        0 gra gra gra gra
+doodad6   tileset/tile_doodad6.png        0 gra gra gra gra
+doodad7   tileset/tile_doodad7.png        0 dir dir dir dir
+doodad8   tileset/tile_doodad8.png        0 dir dir dir dir
+doodad9   tileset/tile_doodad9.png        0 dir dir dir dir
+doodad10  tileset/tile_doodad10.png       0 con dir dir con
+doodad11  tileset/tile_doodad11.png       0 dir con con dir
+doodad12  tileset/tile_doodad12.png       0 con con dir dir
+doodad13  tileset/tile_doodad13.png       0 dir dir con con
+
+[EDGE]
+dirGraN  tileset/dirt_grass_n.png      1 gra gra dir dir
+dirGraE  tileset/dirt_grass_e.png      1 dir gra dir gra
+dirGraS  tileset/dirt_grass_s.png      1 dir dir gra gra
+dirGraW  tileset/dirt_grass_w.png      1 gra dir gra dir
+graDirSE tileset/dirt_grass_se.png     1 gra dir dir dir
+graDirSW tileset/dirt_grass_sw.png     1 dir gra dir dir
+graDirNE tileset/dirt_grass_ne.png     1 dir dir gra dir
+graDirNW tileset/dirt_grass_nw.png     1 dir dir dir gra
+dirGraSE tileset/dirt_grass_nw-fix.png        1 dir gra gra gra
+dirGraSW tileset/dirt_grass_ne-fix.png        1 gra dir gra gra
+dirGraNE tileset/dirt_grass_sw-fix.png        1 gra gra dir gra
+dirGraNW tileset/dirt_grass_se-fix.png        1 gra gra gra dir
+dirWatN  tileset/dirt_water_n.png      1 wat wat dir dir
+dirWatE  tileset/dirt_water_e.png      1 dir wat dir wat
+dirWatW  tileset/dirt_water_w.png      1 wat dir wat dir
+dirWatS  tileset/dirt_water_s.png      1 dir dir wat wat
+dirWatSE tileset/dirt_water_se.png     1 dir wat wat wat
+dirWatSW tileset/dirt_water_sw.png     1 wat dir wat wat
+dirWatNE tileset/dirt_water_ne.png     1 wat wat dir wat
+dirWatNW tileset/dirt_water_nw.png     1 wat wat wat dir
+watDirSE tileset/dirt_water_nw-fix.png 1 wat dir dir dir
+watDirSW tileset/dirt_water_ne-fix.png 1 dir wat dir dir
+watDirNE tileset/dirt_water_sw-fix.png 1 dir dir wat dir
+watDirNW tileset/dirt_water_se-fix.png 1 dir dir dir wat
+harDirN  tileset/harsh_dirt_n.png      1 dir dir hdr hdr
+harDirE  tileset/harsh_dirt_e.png      1 hdr dir hdr dir
+harDirS  tileset/harsh_dirt_s.png      1 hdr hdr dir dir
+harDirW  tileset/harsh_dirt_w.png      1 dir hdr dir hdr
+harDirSE tileset/harsh_dirt_se.png     1 hdr dir dir dir
+harDirSW tileset/harsh_dirt_sw.png     1 dir hdr dir dir
+harDirNE tileset/harsh_dirt_ne.png     1 dir dir hdr dir
+harDirNW tileset/harsh_dirt_nw.png     1 dir dir dir hdr
+dirHarSE tileset/harsh_dirt_NW-fix.png  1 dir hdr hdr hdr
+dirHarSW tileset/harsh_dirt_NE-fix.png  1 hdr dir hdr hdr
+dirHarNE tileset/harsh_dirt_SW-fix.png  1 hdr hdr dir hdr
+dirHarNW tileset/harsh_dirt_SE-fix.png  1 hdr hdr hdr dir
+forGraN  tileset/forest_N.png          0 gra gra for for
+forGraE  tileset/forest_E.png          0 for gra for gra
+forGraS  tileset/forest_S.png          0 for for gra gra
+forGraW  tileset/forest_W.png          0 gra for gra for
+forGraSE tileset/forest_SE.png         0 for gra gra gra
+forGraSW tileset/forest_SW.png         0 gra for gra gra
+forGraNE tileset/forest_NE.png         0 gra gra for gra
+forGraNW tileset/forest_NW.png         0 gra gra gra for
+graForSE tileset/forest_NW-fix.png     0 gra for for for
+graForSW tileset/forest_NE-fix.png     0 for gra for for
+graForNE tileset/forest_SW-fix.png     0 for for gra for
+graForNW tileset/forest_SE-fix.png     0 for for for gra
+lfNE     tileset/landfill-dirt-ne.png       1 dir dir lfl dir
+lfSW     tileset/landfill-dirt-sw.png       1 dir lfl dir dir
+lfSE     tileset/landfill-dirt-se.png       1 lfl dir dir dir
+owNE     tileset/oil-dirt-ne.png            0 dir dir owl dir
+owSW     tileset/oil-dirt-sw.png            0 dir owl dir dir
+owSE     tileset/oil-dirt-se.png            0 owl dir dir dir
+
+conGraE  tileset/concrete_grass_E.png      1 con gra con gra
+conGraNE tileset/concrete_grass_NE.png     1 gra gra con gra
+conGraN  tileset/concrete_grass_N.png      1 gra gra con con 
+conGraNW tileset/concrete_grass_NW.png     1 gra gra gra con
+conGraW  tileset/concrete_grass_W.png      1 gra con gra con
+conGraSW tileset/concrete_grass_SW.png     1 gra con gra gra
+conGraS  tileset/concrete_grass_S.png      1 con con gra gra
+conGraSE tileset/concrete_grass_SE.png     1 con gra gra gra
+graConSE tileset/concrete_grass_NW-fix.png 1 gra con con con
+graConSW tileset/concrete_grass_NE-fix.png 1 con gra con con
+graConNE tileset/concrete_grass_SW-fix.png 1 con con gra con
+graConNW tileset/concrete_grass_SE-fix.png 1 con con con gra
+conDirE  tileset/concrete_dirt_E.png       1 con dir con dir
+conDirNE tileset/concrete_dirt_NE.png      1 dir dir con dir
+conDirN  tileset/concrete_dirt_N.png       1 dir dir con con
+conDirNW tileset/concrete_dirt_NW.png      1 dir dir dir con
+conDirW  tileset/concrete_dirt_W.png       1 dir con dir con
+conDirSW tileset/concrete_dirt_SW.png      1 dir con dir dir
+conDirS  tileset/concrete_dirt_S.png       1 con con dir dir
+conDirSE tileset/concrete_dirt_SE.png      1 con dir dir dir
+dirConSE tileset/concrete_dirt_NW-fix.png  1 dir con con con
+dirConSW tileset/concrete_dirt_NE-fix.png  1 con dir con con
+dirConNE tileset/concrete_dirt_SW-fix.png  1 con con dir con
+dirConNW tileset/concrete_dirt_SE-fix.png  1 con con con dir
+

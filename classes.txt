@@ -1,0 +1,65 @@
+
+                 +-----+
+                 |Model|
+                >|     |<
+          reads/ +-----+ \updates
+      ________/           \              __ServerController
+     |       /             \            /  ^              \ 
+     | +------+            +----------+/  /                \
+     | |View  |-+--------->|Controller|   |commands   state|
+     | |      | |Command   |          |   \                /
+     | +------+ |          +----------+\   \              v 
+     |          |                       \__ClientController
+     | +------+ |
+     +-| AI   |-
+       |      |
+       +------+
+
+Model contains:
+  IDs/names/etc of all players
+  Type of each tile on the map
+  Locations/stats of all units
+  Types/locations of all shots in the air and GFX in progress
+
+View:
+  Does rendering
+  Turns input into Command instances
+
+Controller:
+  Updates the game state as time passes
+  Handles Commands
+
+
+
+
+
+
+
+Client-server view of the same:
+
+           --------View
+           |         | 
+           |         v                  
+           |      Model                 
+           |        ^                   
+           |        |                   
+           |  +-ServerController        
+           |  |           |             
+           |  |           |             
+           v  v           |             
+        CommandQueue      |             
+              ^           |             
+              |_____      |             
+Server              |     v             
+------------------- Network ------------
+Client              ^     |             
+                    |     |             
+                    |     v             
+                ClientController        
+                    |     |             
+                    v     v             
+           CommandQueue  Model          
+                     ^   ^              
+                     |   |              
+                      View              
+

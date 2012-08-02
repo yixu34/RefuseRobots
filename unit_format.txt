@@ -1,0 +1,212 @@
+
+
+                 Unit File Format
+
+
+
+Implementation Status
+=====================
+X Specification written
+X Parser (basic)
+X Parser (corner cases: comments, quotes, backslashes)
+X Loading scaffolding
+X Facing implemented
+X Rendering rules implemented
+X Turrets implemented
+X Animation implemented
+X Stats handled
+~ Sounds handled
+
+Overall format
+==============
+The overall format is
+  [section]
+  value
+  value
+  value
+  ...
+  [section]
+  value
+  ...
+where each value is a whitespace-separated list of fields. Sections may appear
+in any order and not all sections are mandatory. (A missing section is the same
+as that section having no entries). Section names are case-insensitive.
+Anything after a '#' on a line is treated as a comment and ignored. Blank lines
+at any point in the file are ignored. Fields may contain spaces; if they do,
+they must be in quotes. If they contain quotes or newlines, they must be
+written with a backslash, eg '\"' or '\n'.
+
+FRAMES section
+==============
+This section contains the images used for the unit in each of its states, and
+for the unit's turret (if any) in each of its states.
+Each entry consists of:
+- A filename for a picture of that unit or turret
+- What angle that image is facing (in degrees, where 0=east and 90=north).
+- What animation state the image corresponds to (see ANIMATION section)
+- Where the unit is centered in the image (where (0,0) is the top-left corner
+  and (1,1) is the bottom-right corner)
+- How much to rotate the image by when drawing (in degrees, 0 if it shouldn't
+  be rotated)
+- How much to scale the image on each axis when drawing ((1,1) if it
+  should be the same size as a tile; (-1,1) to flip horizontally, etc)
+If more than one entry has the same angle and animation, both will be drawn.
+(For example, one image might be a unit and the other would be its shadow.)
+When the unit is facing at an angle that is not included, it will use whichever
+is the closest match.
+
+For example,
+
+[FRAMES]
+#image         angle anim   center   rot  scale
+tank1-s.png    270   base   0.5 0.5  0     1 1
+tank1-se.png   315   base   0.5 0.5  0     1 1
+tank1-e.png    0     base   0.5 0.5  0     1 1
+tank1-ne.png   45    base   0.5 0.5  0     1 1
+tank1-n.png    90    base   0.5 0.5  0     1 1
+tank1-ne.png   135   base   0.5 0.5  0    -1 1
+tank1-e.png    180   base   0.5 0.5  0    -1 1
+tank1-se.png   225   base   0.5 0.5  0    -1 1
+
+#image         angle anim       center   rot  scale
+turret-s.png   270   tur_base   0.5 0.5  0     1 1
+turret-se.png  315   tur_base   0.5 0.5  0     1 1
+turret-e.png   0     tur_base   0.5 0.5  0     1 1
+turret-ne.png  45    tur_base   0.5 0.5  0     1 1
+turret-n.png   90    tur_base   0.5 0.5  0     1 1
+turret-ne.png  135   tur_base   0.5 0.5  0    -1 1
+turret-e.png   180   tur_base   0.5 0.5  0    -1 1
+turret-se.png  225   tur_base   0.5 0.5  0    -1 1
+
+#image               angle anim        center   rot  scale
+turret-shoot-s.png   270   tur_shoot   0.5 0.5  0     1 1
+turret-shoot-se.png  315   tur_shoot   0.5 0.5  0     1 1
+turret-shoot-e.png   0     tur_shoot   0.5 0.5  0     1 1
+turret-shoot-ne.png  45    tur_shoot   0.5 0.5  0     1 1
+turret-shoot-n.png   90    tur_shoot   0.5 0.5  0     1 1
+turret-shoot-ne.png  135   tur_shoot   0.5 0.5  0    -1 1
+turret-shoot-e.png   180   tur_shoot   0.5 0.5  0    -1 1
+turret-shoot-se.png  225   tur_shoot   0.5 0.5  0    -1 1
+
+#image         angle anim   center   rot  scale
+explode1.png   0     death1 0.5 0.5  0     1 1
+explode2.png   0     death2 0.5 0.5  0     1 1
+explode3.png   0     death3 0.5 0.5  0     1 1
+
+In this example, the images tank1-s, tank1-se, tank1-e, tank1-ne, and tank1-n
+are assumed to match corresponding views of the tank, centered in the middle
+of the tile. The west, northwest, and southwest views are produced by mirroring
+the east, northeast and southeast views. The same is done for the turret and its
+regular (tur_base) and shooting (tur_shoot) states.
+
+
+ANIMATION section
+=================
+Every unit has four animations: idle, move, and death. When a unit is not
+moving, it will play its idle animation in a loop. (In most cases, the idle
+animation will have only one frame). When it starts moving, it will start
+the move animation from the beginning, and loop through it until it stops
+moving. When it shoots, it will play its shoot animation once through; when it
+dies, it will play its death animation once through. Turrets have their own
+animations: turret_idle and turret_shoot.
+
+Each animation is represented with a list of animation-states and durations.
+(The animation-states correspond to those in the FRAMES section; so each
+animation state will usually have a different image for each direction the
+unit could be facing.)
+
+Each entry corresponds to an animation, with the first field being the name
+of that animation, and subsequent fields being animation-states followed by
+durations, measured in frames (about 1/60 second). For example, this unit
+would use a single image when idle or moving, a three-image death sequence,
+and a single image to indicate when its turret has fired. (This is the same
+unit as shown in the FRAMES section).
+
+[ANIMATION]
+idle          base 1
+move          base 1
+turret_shoot  tur_shoot 2
+turret_idle   tur_base 1
+death         death1 3   death2 4   death3 3
+
+Additionally, there are optional animations which not all units have: deploy,
+undeploy, and deployed_idle. If any animation is necessary but omitted, then
+'idle' is played instead. If 'idle' is missing, an error will be thrown.
+
+
+STATS section
+=============
+This section specifies a unit's combat statistics, special abilities, and
+miscellaneous values not given elsewhere. Each entry is of the form
+<stat-name> <value>. Any stat which is not specified here receives a default
+value.
+
+For example,
+[STATS]
+name "Medium Tank"
+build_time 25
+hud_icon hud_medium_tank.png
+mapview_icon mapview_tank.png
+hitpoints 100
+armor 5
+speed 4
+cooldown 0.5
+damage 20
+commands attack stop hold_pos patrol
+
+The eventual full list of stats will probably look something like:
+  name             The unit's name
+  build_icon       The image used for the button to build this unit
+  hud_icon         The image used to show that this unit is selected
+  mapview_icon     The image used to represent this unit in map-view mode
+  build_time       How long this unit takes to produce (in seconds)
+  commands         What actions this unit has on its command-card. (The
+                     commands themselves and hotkeys will be hard-coded)
+  hitpoints        How much damage this unit can take
+  armor            How big a shot has to be to damage this unit
+  speed            How fast the unit moves (in tiles/second)
+  turn_speed       How fast the unit can turn (in rotations/second). If 0, has
+                     instant turning.
+  cooldown         How long this unit waits between shots (in seconds)
+  damage           How much damage is done per shot (assuming an unarmored target)
+  projectile_speed How fast the projectile launched by this unit travels
+  projectile_angle How high this projectile goes along the way
+  attacks_air      Whether this can hit air units
+  homing           1->shots are homing
+  inaccuracy       How much shots potentially miss by
+  carry_cap        How many units can fit in this transport (0 if not a transp.)
+  carry_size       How much transport space this unit uses
+  max_fuel         How much fuel this unit carries
+  mileage          How many tiles this unit can move on 1u of fuel
+  refueler         1->this unit refuels other nearby units automatically
+  deployable       1->this unit must immobilize itself to start shooting
+
+
+SOUNDS section
+==============
+This section gives the filenames of any sounds which the unit may play. Each
+entry is a trigger (the condition under which the sound is played) followed by
+one or more sound names and volumes. If more than one sound is given, a sound 
+s chosen at random, subject to the constraint that the same sound will never be
+chosen twice in a row. If there is no entry for some condition, then the unit
+will stay silent then. For example,
+
+[SOUNDS]
+fire        boom.wav 100
+select      hello.wav 60 hi_there.wav 60
+acknowledge yes_sir.wav 75 on_my_way.wav 75
+die         explode.wav 40
+
+
+Conventions
+===========
+Animation states should use the names given in the example, where applicable.
+The names of images should be of the form (unit)-(state)-(facing).png, where
+(unit) is the unit the image is a picture of (omit if it's used by more than
+one unit), (state) is the state the unit is in (omit for the idle state),
+and (facing) is a cardinal direction, eg n, ne, nw, nne, etc.
+
+Use spaces to line things up in columns wherever it makes sense to do so, and
+put a comment at the top labelling what column contains what. When something is
+omitted (eg a sound or standard animation), leave a comment in its place.
+

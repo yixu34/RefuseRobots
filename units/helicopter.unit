@@ -1,0 +1,106 @@
+[STATS]
+name "Hoverjet"
+speed 4.5
+mapview_icon units/mapview/mapview_aircraft.png
+commands attack move stop retreat
+hitpoints 15
+damage 7
+cooldown 1.5
+range 5
+#cost 25
+cost 25
+production_icon buttons/button_bomber.png
+wireframe buttons/button_bomber.png
+hotkey j
+hud_x 0
+hud_y 2
+flying 1
+vision 15
+fuel_cap 20
+mileage 10
+idle_fuel 0.4
+targets_air 1
+turn_speed 500
+projectile_type missile
+
+[FRAMES]
+#image                                    angle  anim  center      rot  scale
+"units/bomber/bomber-e.png"               0      base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-ne-e.png"            22.5   base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-ne.png"              45     base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-ne-n.png"            67.5   base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-n.png"               90     base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-nw-n.png"            112.5  base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-nw.png"              135    base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-nw-w.png"            157.5  base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-w.png"               180    base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-sw-w.png"            202.5  base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-sw.png"              225    base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-sw-s.png"            247.5  base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-s.png"               270    base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-se-s.png"            292.5  base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-se.png"              315    base  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-se-e.png"            337.5  base  0.5 0.5     0    1.0 1.0
+
+"units/bomber/bombershadow-e.png"         0      base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-ne-e.png"      22.5   base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-ne.png"        45     base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-ne-n.png"      67.5   base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-n.png"         90     base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-nw-n.png"      112.5  base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-nw.png"        135    base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-nw-w.png"      157.5  base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-w.png"         180    base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-sw-w.png"      202.5  base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-sw.png"        225    base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-sw-s.png"      247.5  base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-s.png"         270    base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-se-s.png"      292.5  base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-se.png"        315    base  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-se-e.png"      337.5  base  0.75 -0.75  0    1.0 1.0
+
+"units/bomber/bomber-e-8.png"               0      move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-ne-e-8.png"            22.5   move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-ne-8.png"              45     move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-ne-n-8.png"            67.5   move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-n-8.png"               90     move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-nw-n-8.png"            112.5  move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-nw-8.png"              135    move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-nw-w-8.png"            157.5  move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-w-8.png"               180    move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-sw-w-8.png"            202.5  move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-sw-8.png"              225    move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-sw-s-8.png"            247.5  move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-s-8.png"               270    move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-se-s-8.png"            292.5  move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-se-8.png"              315    move  0.5 0.5     0    1.0 1.0
+"units/bomber/bomber-se-e-8.png"            337.5  move  0.5 0.5     0    1.0 1.0
+
+"units/bomber/bombershadow-e.png"         0      move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-ne-e.png"      22.5   move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-ne.png"        45     move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-ne-n.png"      67.5   move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-n.png"         90     move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-nw-n.png"      112.5  move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-nw.png"        135    move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-nw-w.png"      157.5  move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-w.png"         180    move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-sw-w.png"      202.5  move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-sw.png"        225    move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-sw-s.png"      247.5  move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-s.png"         270    move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-se-s.png"      292.5  move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-se.png"        315    move  0.75 -0.75  0    1.0 1.0
+"units/bomber/bombershadow-se-e.png"      337.5  move  0.75 -0.75  0    1.0 1.0
+
+[ANIMATION]
+idle  base 1
+move  move 1
+
+[SOUNDS]
+die sounds/explosion3.wav 100
+fire sounds/explosion2.wav 50
+select sounds//helicopter/ack_1.wav 100 sounds/helicopter/ack_2.wav 100 sounds/helicopter/ack_3.wav 100
+move sounds/helicopter/move_1.wav 100 sounds/helicopter/move_2.wav 100
+retreat sounds/helicopter/retreat_1.wav 100 sounds/helicopter/retreat_2.wav 100
+attack sounds/helicopter/attack_1.wav 100 sounds/helicopter/attack_2.wav 100

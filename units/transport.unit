@@ -1,0 +1,70 @@
+[STATS]
+name "Transport"
+speed 3.5
+mapview_icon units/mapview/mapview_transport_empty.png
+loaded_icon units/mapview/mapview_transport_filled.png
+loaded_nanites_icon units/mapview/mapview_transport_nanites.png
+commands move stop unload_all retreat
+hitpoints 30
+damage 0
+cooldown 1
+range 0
+transports 8
+cost 10
+production_icon buttons/button_transport.png
+wireframe buttons/button_transport.png
+hotkey t
+hud_x 2
+hud_y 0
+vision 12
+turn_speed 280
+fuel_cap 10
+mileage 35
+
+[FRAMES]
+#image                                  angle  anim  center   rot  scale
+"units/transport/transport-e.png"       0      base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-ne-e.png"    22.5   base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-ne.png"      45     base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-ne-n.png"    67.5   base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-n.png"       90     base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-nw-n.png"    112.5  base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-nw.png"      135    base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-nw-w.png"    157.5  base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-w.png"       180    base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-sw-w.png"    202.5  base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-sw.png"      225    base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-sw-s.png"    247.5  base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-s.png"       270    base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-se-s.png"    292.5  base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-se.png"      315    base  0.5 0.5  0    1.0 1.0
+"units/transport/transport-se-e.png"    337.5  base  0.5 0.5  0    1.0 1.0
+
+"units/transport/transport-e-8.png"       0      move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-ne-e-8.png"    22.5   move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-ne-8.png"      45     move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-ne-n-8.png"    67.5   move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-n-8.png"       90     move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-nw-n-8.png"    112.5  move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-nw-8.png"      135    move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-nw-w-8.png"    157.5  move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-w-8.png"       180    move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-sw-w-8.png"    202.5  move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-sw-8.png"      225    move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-sw-s-8.png"    247.5  move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-s-8.png"       270    move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-se-s-8.png"    292.5  move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-se-8.png"      315    move  0.5 0.5  0    1.0 1.0
+"units/transport/transport-se-e-8.png"    337.5  move  0.5 0.5  0    1.0 1.0
+
+[ANIMATION]
+idle  base 1
+move  move 1
+
+[SOUNDS]
+die sounds/explosion3.wav 100
+select sounds/transport/ack_1.wav 100 sounds/transport/ack_2.wav 100 sounds/transport/ack_3.wav 100
+move sounds/transport/move_1.wav 100 sounds/transport/move_2.wav 100
+retreat sounds/transport/retreat_1.wav 100 sounds/transport/retreat_2.wav 100
+
+

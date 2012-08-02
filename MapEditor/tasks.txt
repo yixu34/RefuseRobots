@@ -1,0 +1,80 @@
+
+~ Fix permissions issue with running from Z: drive
+~ Automatically fill in corner transition tiles
+
+  X Copy/paste/mirror regions of terrain
+  
+Place scrapyards and oil wells
+  Multi-tile brushes (for scrapyards)
+
+
+
+
+
+
+
+Three classes:
+  base(t)
+  edge(heading, border1, border2)
+  corner(heading, border1, border2)
+
+
+base(t)
+      A
+  +-------+
+  |ttttttt|
+  |ttttttt|
+ D|ttttttt|B
+  |ttttttt|
+  |ttttttt|
+  |ttttttt|
+  +-------+
+      C
+
+edge(h, t, u)
+      A
+  +-------+
+  |ttttttt|
+  |ttttttt|
+ D|ttttttt|B
+  |uuuuuuu|
+  |uuuuuuu|
+  |uuuuuuu|
+  +-------+
+      C
+
+corner(h, t, u)
+      A
+  +-------+
+  |ttttttt|
+  |ttttttt|
+ D|ttttttt|B
+  |uuuuttt|
+  |uuuuttt|
+  |uuuuttt|
+  +-------+
+      C
+
+
+
+
+Edge tiles
+
+edge(h, b1, b2)
+b1='/', b2='='
+
+      A
+  +-------+
+  |///////|
+  |///////|
+ D|///////|B
+  |=======|
+  |=======|
+  |=======|
+  +-------+
+      C
+
+Edge A either:
+  matches a base(t) s.t. b1=t
+  matches an edge (h', b1', b2') s.t. (h'=h & b1'=b2) | (h'=h+2 & b1=b2)
+  matches a corner(h', b1', b2')

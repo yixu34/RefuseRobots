@@ -1,0 +1,86 @@
+[STATS]
+name "Heavy Tank"
+speed 1.2
+mapview_icon units/mapview/mapview_tank2.png
+production_icon buttons/button_heavy_tank.png
+wireframe buttons/button_heavy_tank.png
+commands attack move stop retreat
+hitpoints 80
+damage 8
+cooldown 1
+range 9
+cost 20
+hotkey h
+hud_x 2
+hud_y 1
+vision 9
+mileage 7
+fuel_cap 15
+projectile_type tank
+barrel_length 0.8
+
+[FRAMES]
+#image                                          angle  anim   center   rot  scale
+"units/heavytank/heavy tank body-e.png"         0      base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-ne-e.png"      22.5   base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-ne.png"        45     base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-ne-n.png"      67.5   base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-n.png"         90     base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-nw-n.png"      112.5  base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-nw.png"        135    base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-nw-w.png"      157.5  base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-w.png"         180    base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-sw-w.png"      202.5  base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-sw.png"        225    base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-sw-s.png"      247.5  base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-s.png"         270    base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-se-s.png"      292.5  base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-se.png"        315    base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank body-se-e.png"      337.5  base   0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-e.png"       0      turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-ne-e.png"    22.5   turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-ne.png"      45     turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-ne-n.png"    67.5   turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-n.png"       90     turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-nw-n.png"    112.5  turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-nw.png"      135    turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-nw-w.png"    157.5  turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-w.png"       180    turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-sw-w.png"    202.5  turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-sw.png"      225    turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-sw-s.png"    247.5  turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-s.png"       270    turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-se-s.png"    292.5  turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-se.png"      315    turret 0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-se-e.png"    337.5  turret 0.5 0.5  0    1.0 1.0
+
+"units/heavytank/heavy tank turret-e-9.png"     0      shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-ne-e-9.png"  22.5   shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-ne-9.png"    45     shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-ne-n-9.png"  67.5   shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-n-9.png"     90     shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-nw-n-9.png"  112.5  shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-nw-9.png"    135    shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-nw-w-9.png"  157.5  shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-w-9.png"     180    shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-sw-w-9.png"  202.5  shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-sw-9.png"    225    shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-sw-s-9.png"  247.5  shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-s-9.png"     270    shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-se-s-9.png"  292.5  shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-se-9.png"    315    shoot  0.5 0.5  0    1.0 1.0
+"units/heavytank/heavy tank turret-se-e-9.png"  337.5  shoot  0.5 0.5  0    1.0 1.0
+
+[ANIMATION]
+idle  base 1
+move  base 1
+turret turret 1
+turret_shoot shoot 15
+
+[SOUNDS]
+die sounds/explosion3.wav 100
+fire sounds/explosion2.wav 50
+select sounds/heavytank/ack_1.wav 100 sounds/heavytank/ack_2.wav 100 sounds/heavytank/ack_3.wav 100
+move sounds/heavytank/move_1.wav 100 sounds/heavytank/move_2.wav 100
+retreat sounds/heavytank/retreat_1.wav 100 sounds/heavytank/retreat_2.wav 100
+attack sounds/heavytank/attack_1.wav 100 sounds/heavytank/attack_2.wav 100

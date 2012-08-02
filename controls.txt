@@ -1,0 +1,84 @@
+Control Scheme
+
+Unimplemented
+=============
+Normal and map views:
+  Alt  +Right click = send fuel tanker to spot
+Minimap
+  Shift+Left click  = select producer nearest to
+  Alt  +Left click  = ping (highlight for teammates)
+  Alt  +Right click = select fuel truck nearest to
+
+Normal View
+===========
+X       Left click  = select unit
+X     Double click  = select all units of same type
+X Shift+Left click  = toggle selection of unit
+X Ctrl +Left click  = toggle selection of unit
+X       Left-drag   = select multiple units
+X Shift+Left-drag   = add multiple units to selection
+X Ctrl +Left-drag   = remove multiple units from selection
+X       Right click = move
+X Shift+Right click = attack move
+X Ctrl +Right click = enter map view centered at
+
+X Alt (hold)        = show unit status (show HP and fuel bars)
+X Alt  +Left click  = send unit to nearest friendly scrapyard (retreat)
+  Alt  +Right click = send fuel tanker to spot
+
+Minimap
+=======
+X       Left click  = center view at
+  Shift+Left click  = select producer nearest to
+X Ctrl +Left click  = 
+X       Right click = move
+X Shift+Right click = attack move
+X Ctrl +Right click = enter map view centered at
+
+  Alt  +Left click  = ping (highlight for teammates)
+  Alt  +Right click = select fuel truck nearest to
+
+Map View
+========
+X     Double click  = enter normal view centered at
+X       Left click  = select unit
+X Shift+Left click  = toggle selection of unit
+X Ctrl +Left click  = toggle selection of unit
+X       Left-drag   = select multiple units
+X Shift+Left-drag   = add multiple units to selection
+X Ctrl +Left-drag   = remove multiple units from selection
+X       Right click = move
+X Shift+Right click = attack move
+X Ctrl +Right click = enter normal view centered at
+
+X Alt (hold)        = show unit status (color units according to their HP)
+X Alt  +Left click  = send unit to nearest friendly scrapyard (retreat)
+  Alt  +Right click = send fuel tanker to spot
+
+Keys
+====
+X [0-9]            = select hotkeyed unit group
+X Double-tap [0-9] = select hotkeyed group and center on it
+X Multiple [0-9]   = select multiple hotkeyed groups (eg hold 1+2 to get groups 1+2 together)
+X Shift+[0-9]      = add selection to hotkeyed group
+X Ctrl+[0-9]       = hotkey selection as group
+X Arrow keys       = scroll view
+X Tab              = toggle map-view
+
+Unit commands
+=============
+A attack
+G guard (spot or unit)
+H hold position
+M move
+P patrol
+R retreat
+S stop
+
++--------+--------+--------+--------+
+| attack |  move  |  stop  |hold pos|
++--------+--------+--------+--------+
+| patrol | retreat|        |        |
++--------+--------+--------+--------+
+| charge | normal |keepDist|  flee  |
++--------+--------+--------+--------+

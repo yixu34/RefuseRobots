@@ -1,0 +1,240 @@
+Key
+===
+  Not done
+> Not done and needs more detail on the todo list (subpoints)
+A Assigned
+~ Sort-of done (caveats apply)
+X Done
+! Blocked (requires art or something else before doing)
+
+High Priority
+=============
+  In-game menus
+      Quitting
+  
+  Make quality maps
+      2-player
+      4-player
+  
+~ Computer player AI
+  
+~ Multiplayer lobby
+      add AI players/close slots
+
+Unsorted Priority
+=================
+  Find sound effects
+~     Music
+~     Buttons
+~     Unit acknowledgements
+~     Explosions
+
+Completely Independent
+======================
+~ Minimap display
+X     Prerender and draw terrain
+X     Show screen location
+X     Accept clicks
+      Show units
+      Show fog of war
+  Fancy credits screen
+  Mapview key/legend
+  Show command and shot activity arrows in mapview mode
+
+Reduced Priority
+================
+~ Bandwidth optimization
+  UDP
+  High ground (SimCity style)?
+  Intelligent handling of mixed-type groups (command card, right-click act, etc)
+  Art: Medium tank (?)
+  Unit AI/commands
+      Hold position
+      Patrol
+  Loading screens
+      Startup
+      Start game
+
+Low priority
+============
+  Network compression
+  Minimap ping
+  Server handoff
+
+Finished
+========
+X Map loading
+X Multi-select/Hotkeys
+X Connecting client->server
+X HUD/draw buttons
+X HUD/clickable buttons
+X Unit file format (see unit_format.txt)
+X UI generating commands with buttons
+X Pathing collision detection
+X Unit ownership
+X     Graphical indicator
+X     Limit selection/commands
+X In-game chat
+X     over the network
+X Unit shooting
+X     Create projectiles with attack command
+X     Send projectiles over the network
+X     Show unit HPs
+X     Deal damage when projectiles hit
+X     Kill units with no HP
+X     Send damage/death over the network
+X     Keep shooting at given targets
+X     Enforce range limit
+X     Automatically acquire nearby targets
+X Write interface for AI
+X Attack move
+X Music/Sound code
+X Scrapyards
+X     placing
+X     selecting
+X     hotkeying
+X     production at
+X     send status over network
+X     acquiring+clearing
+X Map view
+X     Basic display
+X     Entering/leaving
+X     Indicate selection
+X     Show unit owner
+X     Show scrapyards
+X     Indicate unit hotkeys
+X Command button tooltips
+X Edge scrolling
+X Cursor drawing
+X Artillery splash
+X Artillery minimum range
+X AI notification
+X Working air movement
+X Unit types
+X     Artillery
+X         Inaccuracy
+X     Helicopters
+X         Air movement
+X     Troop transports
+X         Display # loaded
+X         Loading and unloading
+X         Show load-status in map view
+X         Limit which types can enter
+X         Produce nanites
+X         Deploy nanites
+X     Nanites
+X     Oil trucks
+X         Show unit fuel
+X         Drain unit fuel
+X         Immobilize empty units
+X         Refill units
+X         Explosion on death
+X     Helicopters
+X         Only some things can shoot at
+X         Said things CAN shoot at
+X         Idle fuel drain
+X Unit AI/commands
+X     Escort
+X     Retreat
+X Multiplayer lobby
+X     synchronized start
+X     seeing other players in
+X     chatting in
+X	  remove players who leave
+X	  don't allow join after game started
+X	  don't allow joining full games
+X Fog of war
+X     In normal view
+X     In map view
+X Finish AI Framework/AI notification
+X     Implement notify functions
+X     Implement Scrapyard IDs
+X     Notify for scrapyard ownership change
+X Debug Artillery shooting outside the map
+X HUD
+X     buttons
+X     selected unit display
+X     show unit stats
+X     show units inside transports
+X     click on unit inside transport display
+X     click on selected unit display
+X Tileset
+X Cursor
+X Scrapyards
+X     build queue
+X     capture delay
+X     rally points
+X Fog of war
+X     In normal view
+X     In map view
+X Unit file loading (see unit_format.txt)
+~ Graphical Effects
+X     Proper unit turning and facing
+X     Independent turret facing
+X     Projectiles go between air and ground
+X     Send turret headings over network
+X     Artillery arc
+X     Line up projectile starts with barrel end
+X     Unit death explosions
+X     Artillery explosion
+X     Infantry walk
+X Unit AI
+X     Fix fuel handling
+X     Pathfinding (good)
+X     Oil tanker assist
+X Bugs
+X     Starting camera location is effectively random
+X     Minimap (funny texture size) doesn't load on some comps
+X     Fog not updated leaving transports
+X     Fog should be revealed by scrapyards
+X     Units sometimes freeze up (does this still happen?)
+X     Automatic target acquisition is O(n^2) in the number of units
+X Art: Tileset
+X     Forest tiles
+X Art: HUD buttons
+X     Unit production
+X     Retreat command
+X     Unload all command
+X     Repeat production command
+X     Rally command
+X Graphical effects
+X     Force-facing for artillery and infantry
+X     Tank shells
+X     Helicopter bombs
+X     Infantry rockets
+X Art: Unit wireframes
+X Art: Menus
+X Matchmaking
+X     show list to join
+X Victory condition
+X     Post-mortem screen
+X     Signal game-over via network
+X     Return from postmortem to main menu
+X     Win condition
+X Network cleanup
+X     Respond when players leave
+X     Wait-screens
+X Bugs
+X     One of the bomber shadow images is not a shadow
+X     Multiplayer clients want spurious text input
+X     Edge scrolling shouldn't try to be so clever
+X     Client camera doesn't center right at start
+X     Right-facing infantry missing shadows
+X     Server disconnection should go to post-mortem, not quit
+X     Animations are framerate dependent
+X     Game names with spaces get truncated
+X     Force-facing units get stuck
+X     Refresh button doesn't work
+X     Don't let server accidentally leave when others are still playing
+~     Rejoining leads to invalid player IDs
+X     Units can't autotarget until they get their first order
+  
+X Infantry
+X Scout tank
+X Armor tank
+X Gun tank
+X Helicopter
+X Artillery
+X Oil tanker
+X Troop transport
+X Nanite

@@ -1,0 +1,78 @@
+[STATS]
+name "Artillery"
+speed 1.5
+mapview_icon units/mapview/mapview_artillery.png
+commands attack move stop retreat
+hitpoints 20
+damage 3
+cooldown 8
+projectile_speed 30
+range 30
+cost 26
+production_icon buttons/button_artillery.png
+wireframe buttons/button_artillery.png
+hotkey a
+hud_x 3
+hud_y 1
+inaccuracy 2.0
+splash_damage 0.4
+minimum_range 8
+burst_fire 5
+burst_fire_interval 0.1
+vision 14
+mileage 5
+fuel_cap 20
+turn_speed 90
+projectile_type artillery
+explosion_effect artillery
+faces_target 1
+
+[FRAMES]
+#image                                  angle  anim  center   rot  scale
+"units/artillery/artillery-e.png"       0      base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-ne-e.png"    22.5   base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-ne.png"      45     base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-ne-n.png"    67.5   base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-n.png"       90     base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-nw-n.png"    112.5  base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-nw.png"      135    base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-nw-w.png"    157.5  base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-w.png"       180    base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-sw-w.png"    202.5  base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-sw.png"      225    base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-sw-s.png"    247.5  base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-s.png"       270    base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-se-s.png"    292.5  base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-se.png"      315    base  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-se-e.png"    337.5  base  0.5 0.5  0    1.0 1.0
+
+"units/artillery/artillery-e-9.png"       0      shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-ne-e-9.png"    22.5   shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-ne-9.png"      45     shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-ne-n-9.png"    67.5   shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-n-9.png"       90     shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-nw-n-9.png"    112.5  shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-nw-9.png"      135    shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-nw-w-9.png"    157.5  shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-w-9.png"       180    shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-sw-w-9.png"    202.5  shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-sw-9.png"      225    shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-sw-s-9.png"    247.5  shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-s-9.png"       270    shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-se-s-9.png"    292.5  shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-se-9.png"      315    shoot  0.5 0.5  0    1.0 1.0
+"units/artillery/artillery-se-e-9.png"    337.5  shoot  0.5 0.5  0    1.0 1.0
+
+[ANIMATION]
+idle  base 1
+move  base 1
+turret_shoot shoot 5
+
+[SOUNDS]
+die sounds/explosion3.wav 100
+fire sounds/explosion2.wav 30
+select sounds/artillery/ack_1.wav 100 sounds/artillery/ack_2.wav 100 sounds/artillery/ack_3.wav 100
+move sounds/artillery/move_1.wav 100 sounds/artillery/move_2.wav 100
+retreat sounds/artillery/retreat_1.wav 100 sounds/artillery/retreat_2.wav 100
+attack sounds/artillery/attack_1.wav 100 sounds/artillery/attack_2.wav 100
+

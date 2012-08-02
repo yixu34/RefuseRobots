@@ -1,0 +1,64 @@
+[STATS]
+name "Infantry"
+speed 1.4
+mapview_icon units/mapview/mapview_infantry1.png
+production_icon buttons/button_infantry.png
+wireframe buttons/button_infantry.png
+commands attack move stop retreat
+hitpoints 16
+damage 7
+cooldown 1.5
+range 6
+cost 12
+hotkey i
+hud_x 0
+hud_y 0
+vision 12
+targets_air 1
+transportable 1
+uses_fuel 0
+starting_fuel 0
+turn_speed 500
+projectile_type missile
+faces_target 1
+
+[FRAMES]
+#image                                angle  anim  center   rot  scale
+"units/infantry/infantry-e.png"       0      base  0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-ne.png"      45     base  0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-n.png"       90     base  0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-nw.png"      135    base  0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-w.png"       180    base  0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-sw.png"      225    base  0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-s.png"       270    base  0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-se.png"      315    base  0.5 0.5  0    1.0 1.0
+
+"units/infantry/infantry-e-1.png"     0      walk1 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-ne-1.png"    45     walk1 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-n-1.png"     90     walk1 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-nw-1.png"    135    walk1 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-w-1.png"     180    walk1 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-sw-1.png"    225    walk1 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-s-1.png"     270    walk1 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-se-1.png"    315    walk1 0.5 0.5  0    1.0 1.0
+
+"units/infantry/infantry-e-2.png"     0      walk2 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-ne-2.png"    45     walk2 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-n-2.png"     90     walk2 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-nw-2.png"    135    walk2 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-w-2.png"     180    walk2 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-sw-2.png"    225    walk2 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-s-2.png"     270    walk2 0.5 0.5  0    1.0 1.0
+"units/infantry/infantry-se-2.png"    315    walk2 0.5 0.5  0    1.0 1.0
+
+[ANIMATION]
+idle  base 1
+move  base 16 walk1 16 walk2 16
+
+[SOUNDS]
+die sounds/explosion3.wav 100
+fire sounds/explosion2.wav 50
+select sounds/infantry/ack_1.wav 100 sounds/infantry/ack_2.wav 100 sounds/infantry/ack_3.wav 100
+move sounds/infantry/move_1.wav 100 sounds/infantry/move_2.wav 100
+retreat sounds/infantry/retreat_1.wav 100 sounds/infantry/retreat_2.wav 100
+attack sounds/infantry/attack_1.wav 100 sounds/infantry/attack_2.wav 100

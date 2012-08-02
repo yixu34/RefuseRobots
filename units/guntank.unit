@@ -1,0 +1,87 @@
+[STATS]
+name "Gun Tank"
+speed 3.5
+mapview_icon units/mapview/mapview_tank2.png
+commands attack move stop retreat
+hitpoints 40
+damage 10
+cooldown 1
+range 8
+cost 20
+production_icon buttons/button_aTank.png
+wireframe buttons/button_aTank.png
+hotkey g
+hud_x 1
+hud_y 1
+vision 9
+mileage 10
+fuel_cap 20
+projectile_type tank
+barrel_length 0.8
+
+[FRAMES]
+#image                                     angle  anim   center   rot  scale
+"units/guntank/aTank-E.png"                0      base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-NE-E.png"             22.5   base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-NE.png"               45     base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-NE-N.png"             67.5   base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-N.png"                90     base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-NW-N.png"             112.5  base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-NW.png"               135    base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-NW-W.png"             157.5  base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-W.png"                180    base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-SW-W.png"             202.5  base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-SW.png"               225    base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-SW-S.png"             247.5  base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-S.png"                270    base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-SE-S.png"             292.5  base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-SE.png"               315    base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTank-SE-E.png"             337.5  base   0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-E.png"          0      turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-NE-E.png"       22.5   turret 0.5 0.5  0    1.0 1.0
+"units/gunTank/aTankTurret-NE.png"         45     turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-NE-N.png"       67.5   turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-N.png"          90     turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-NW-N.png"       112.5  turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-NW.png"         135    turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-NW-W.png"       157.5  turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-W.png"          180    turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-SW-W.png"       202.5  turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-SW.png"         225    turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-SW-S.png"       247.5  turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-S.png"          270    turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-SE-S.png"       292.5  turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-SE.png"         315    turret 0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-SE-E.png"       337.5  turret 0.5 0.5  0    1.0 1.0
+
+"units/guntank/aTankTurret-E-9.png"        0      shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-NE-E-9.png"     22.5   shoot  0.5 0.5  0    1.0 1.0
+"units/gunTank/aTankTurret-NE-9.png"       45     shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-NE-N-9.png"     67.5   shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-N-9.png"        90     shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-NW-N-9.png"     112.5  shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-NW-9.png"       135    shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-NW-W-9.png"     157.5  shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-W-9.png"        180    shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-SW-W-9.png"     202.5  shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-SW-9.png"       225    shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-SW-S-9.png"     247.5  shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-S-9.png"        270    shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-SE-S-9.png"     292.5  shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-SE-9.png"       315    shoot  0.5 0.5  0    1.0 1.0
+"units/guntank/aTankTurret-SE-E-9.png"     337.5  shoot  0.5 0.5  0    1.0 1.0
+
+[ANIMATION]
+idle  base 1
+move  base 1
+turret turret 1
+turret_shoot shoot 15
+
+[SOUNDS]
+die sounds/explosion3.wav 100
+fire sounds/explosion2.wav 50
+select sounds/guntank/ack_1.wav 100 sounds/guntank/ack_2.wav 100 sounds/guntank/ack_3.wav 100
+move sounds/guntank/move_1.wav 100 sounds/guntank/move_2.wav 100
+retreat sounds/guntank/retreat_1.wav 100 sounds/guntank/retreat_2.wav 100
+attack sounds/guntank/attack_1.wav 100 sounds/guntank/attack_2.wav 100
+

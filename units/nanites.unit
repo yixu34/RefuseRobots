@@ -1,0 +1,35 @@
+[STATS]
+name "Nanite Container"
+speed 0
+mapview_icon units/mapview/mapview_oiltruck.png
+commands stop
+hitpoints 40
+damage 0
+cooldown 1
+range 0
+transportable 1
+converts_scrapyard 1
+cost 40
+production_icon buttons/button_nanites.png
+wireframe buttons/button_nanites.png
+hotkey n
+hud_x 1
+hud_y 0
+uses_fuel 0
+starting_fuel 0
+vision 5
+regeneration 2
+
+[FRAMES]
+#image               angle  anim  center   rot  scale
+"nanites.png"        0      base  0.5 0.7  0    0.6 0.6
+
+[ANIMATION]
+idle  base 1
+move  base 1
+
+[SOUNDS]
+die sounds/explosion3.wav 100
+select sounds/nanites/ack_1.wav 100
+move sounds/nanites/move_1.wav 100
+
